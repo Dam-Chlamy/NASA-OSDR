@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Access Launchpad</title>
+	<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+	<link href="https://launchpad.nasa.gov/icam/api/assets/icam-api-hsts.css" rel="stylesheet" type="text/css" />
+	<link href="/icam/api/assets/launchpad-2.0.1.css" rel="stylesheet" type="text/css" />
+	<script src="/icam/api/assets/launchpad-2.0.0.js" type="application/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="Pragma" content="no-cache,no-store"/>
+	<meta http-equiv="cache-control" content="no-cache,no-store"/>	
+</head>
+<body>
+<header id="headerContent" class="sticky-top">
+	<div id="header" class="mb-2">
+		<nav class="container" role="navigation">
+			<div class="row pt-1">
+				<div class="col pl-0">
+					<a tabindex="1" class="btn logo-button" href="https://auth.launchpad.nasa.gov/login?level=20&target=https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D" title="Return to log in" alt="NASA Access Launchpad Logo"></a>
+				</div>
+				<!--Navbar-->
+				<nav class="navbar navbar-light navbar-1 col-auto d-block d-md-none" style="display:hidden;/* display: none; *//* top: 0; *//* right: 0; */">
+
+					<!-- Collapse button -->
+					<button class="navbar-toggler collapsed lp-mobile-dropdown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><img style="height:32px;" src="data:image/png;base64,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" alt="Mobile Menu button" /></button>
+
+					<!-- Collapsible content -->
+					<div class="navbar-collapse collapse" id="navbarSupportedContent15" style="background: white;">
+
+						<!-- Links -->
+						<ul class="navbar-nav mr-auto" id="mobileMenuList">
+							<li class="nav-item active">
+								<a class="text-dark" href="#" data-target="#newuser" data-toggle="modal">First Time User</a>
+								<hr>
+							</li>
+							<li class="nav-item">
+								<a class="text-dark" href="/help?level=20&target=https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D">Help</a>
+								<hr>
+							</li>
+							<li class="nav-item">
+								<a class="text-dark" href="https://id.nasa.gov/PasswordReset" target="_blank">Forgot Password</a>
+								<hr>
+							</li>
+							<li class="nav-item">
+								<a class="text-dark" href="https://id.nasa.gov/AUIDRetrieval" target="_blank">Find Agency User ID</a>
+							</li>
+						</ul>
+						<!-- Links -->
+
+					</div>
+					<!-- Collapsible content -->
+
+				</nav>
+				<!--/.Navbar-->
+				<div class="col-auto d-md-block d-none align-self-center">
+					<div id="headerLinks" class="d-md-block d-none btn-toolbar float-right" role="toolbar">
+						<a tabindex="2" class="dark-background header-link m-2" href="#" data-target="#newuser" data-toggle="modal">First Time User</a>
+						<a tabindex="3" class="dark-background header-link m-2" href="https://id.nasa.gov/AUIDRetrieval" target="_blank">Find Agency User ID</a>
+						<a tabindex="4" class="dark-background header-link m-2" href="/help?level=20&target=https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D">Help</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+<script type='text/javascript' nonce='bYmaKlRaKnXD/dfH3CSjX+q8+zHvL+fLBir9F0uXYLDXLfYoNvPJH4oxwtzD4TW6vPHbtKjL+iqwGKJ8ZBJ7bg=='>
+$(document).ready(function() {
+	$('#USER1').on("input", resetForm); $('#PASSWORD1').on("input", resetForm);
+	$('#USER2').on("input", resetForm); $('#PASSWORD2').on("input", resetForm);
+	var rsaLogins = 3;
+	var anchor = window.top.location.hash;
+	if (top != self) {
+		top.location = self.location;
+	}
+	var level = $.urlParam('level');
+	if (level==30) {
+		$('#AUID-desktop').prop('disabled', true);
+		$('#AUID-mobile').addClass('disabled');
+		$('#stepup-moderate').show();
+	}
+	else if (level==40) {
+		$('#AUID-desktop').prop('disabled', 'javascript:void(0);');
+		$('#RSA-desktop').prop('disabled', 'javascript:void(0);');
+		$('#AUID-mobile').addClass('disabled');
+		$('#RSA-mobile').addClass('disabled');		
+		$('#stepup-high').show();
+	}
+	$('#AUID-desktop,#AUID-mobile').click(activateID);
+	$('#SMARTCARD-desktop,#SMARTCARD-mobile').click(activateID);
+	$('#RSA-desktop,#RSA-mobile').click(activateID);
+	$('#auidLoginForm').submit(function(e) {
+		e.preventDefault();
+		$('#USER1').css('border-color', '');
+		$('#PASSWORD1').css('border-color', '');
+		if ($('#USER1').val() == '') {
+			$('#USER1').css('border-color', 'red');
+			return false;
+		}
+		if ($('#PASSWORD1').val() == '') {
+			$('#PASSWORD1').css('border-color', 'red');
+			return false;
+		}
+		var encpwd = window.btoa($('#PASSWORD1').val());
+		$.ajax({ 
+			url: 'https://auth.launchpad.nasa.gov/icam/api/lp/login.auid',
+			type: 'post',
+			dataType: 'json',
+			data: { 'user': $('#USER1').val(), 'password': encpwd, 'method': "GET", 'parentId': "0000018e3dd11bca-f8356f", 'target': "https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D" },
+			timeout : 30000,
+			beforeSend: function() {
+				$('#auid_login_button').attr('disabled', true);	
+				resetMessage();
+			},
+			success: function(response) {
+				window.location.href = decodeURIComponent('https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D') + anchor;
+			},
+			error: function(jqxhr, textStatus, errorThrown) {
+				$('#auid_login_button').attr('disabled', false);
+				$('#login-failed-auid-response-message').text(jqxhr.responseJSON.message);
+				$('#login-failed-auid-message').show();
+				$('#login-failed-auid-spacer').hide();
+				$('#PASSWORD1').val('');
+				$('#errorCode').text(jqxhr.responseJSON.supportId);
+				$('#errorTime').text(jqxhr.responseJSON.timestamp);
+				$('#copy_support_detail').attr('data-clipboard-text', 'sid:' + jqxhr.responseJSON.supportId + '|tid:pm20000018e3dd11bca-f8356f' + '|ts:' + jqxhr.responseJSON.timestamp);
+			}
+		});
+	});
+	$('#rsaLoginForm').submit(function(e) {
+		e.preventDefault();
+		$('#USER2').css('border-color', '');
+		$('#PASSWORD2').css('border-color', '');
+		if ($('#USER2').val() == '') {
+			$('#USER2').css('border-color', 'red');
+			return false;
+		}
+		if ($('#PASSWORD2').val() == '') {
+			$('#PASSWORD2').css('border-color', 'red');
+			return false;
+		}
+		var encpwd = window.btoa($('#PASSWORD2').val());
+		$.ajax({ 
+			url: 'https://auth.launchpad.nasa.gov/icam/api/lp/login.rsa',
+			type: 'post',
+			dataType: 'json',
+			data: { "user": $('#USER2').val(), "password": encpwd, "method": "GET", "parentId": "0000018e3dd11bca-f8356f", "target": "https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D" },
+			timeout : 30000,
+			beforeSend: function() {
+				$('#rsa_login_button').attr('disabled', true);
+				resetMessage();
+			},
+			success: function(response) {
+				window.location.href = decodeURIComponent('https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D') + anchor;			
+			},
+			error: function(jqxhr, textStatus, errorThrown) {
+				$('#rsa_login_button').attr('disabled', false);
+				$('#login-failed-rsa-response-message').text(jqxhr.responseJSON.message);
+				$('#login-failed-rsa-message').show();
+				$('#login-failed-rsa-spacer').hide();
+				$('#PASSWORD2').val('');
+				$('#errorCode').text(jqxhr.responseJSON.supportId);
+				$('#errorTime').text(jqxhr.responseJSON.timestamp);
+				$('#copy_support_detail').attr('data-clipboard-text', 'sid:' + jqxhr.responseJSON.supportId + '|tid:pm20000018e3dd11bca-f8356f' + '|ts:' + jqxhr.responseJSON.timestamp);			
+				if (rsaLogins<=0) {
+					window.location.href = 'https://agencytokens.nasa.gov/';
+				}
+				else {
+					rsaLogins--;
+				}
+			}
+		});
+	});
+	$('#scLoginForm').submit(function(e) {
+		e.preventDefault();
+		$('#scLogin').attr('disabled', true);
+		window.location.href = 'https://api.launchpad.nasa.gov/icam/api/lp/login.sc?method=' + 'GET' + '&parentId=' + '0000018e3dd11bca-f8356f'+ '&target=' + 'https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D'  + anchor;
+	});
+	$('#USER1').keypress(function() {
+		$('#login-failed-auid-message').hide();;
+		$('#login-failed-auid-spacer').show();
+		$('#USER1').css('border-color', '');
+	});
+	$('#PASSWORD1').keypress(function() {
+		$('#login-failed-auid-message').hide();;
+		$('#login-failed-auid-spacer').show();
+		$('#PASSWORD1').css('border-color', '');
+	});
+	$('#USER2').keypress(function() {
+		$('#login-failed-rsa-message').hide();;
+		$('#login-failed-rsa-spacer').show();
+		$('#USER2').css('border-color', '');
+	});
+	$('#PASSWORD2').keypress(function() {
+		$('#login-failed-rsa-message').hide();;
+		$('#login-failed-rsa-spacer').show();
+		$('#PASSWORD2').css('border-color', '');
+	});
+	$('#copy_support_detail').click(function () {
+		var clipboard = new ClipboardJS('#copy_support_detail', {container: document.getElementById('supportDetailsModal')});
+		$('#copy_support_detail').removeClass('btn-primary');
+		$('#copy_support_detail').addClass('btn-success');
+		$('#copy_support_detail').text('Copied');
+		setTimeout(function() {
+			$('#copy_support_detail').removeClass('btn-success').addClass('btn-primary');
+			$('#copy_support_detail').text('Copy');
+		}, 3000);
+	});
+	$('#close_support_detail').click(function () {
+		$('#copy_support_detail').addClass('btn-primary');
+		$('#copy_support_detail').removeClass('btn-success');
+		$('#copy_support_detail').text('Copy');
+	});
+});
+</script>
+<div class="container">
+		<div id="stepup-moderate" class="row" style="display:none;">
+		<div class="col-12 col-sm-12 col-md-7 col-lg-5 col-center">
+			<div class="alert alert-warning text-center mb-2">
+				<strong>Moderate Access Level Required.</strong>
+			</div>
+		</div>
+	</div>
+	<div id="stepup-high" class="row" style="display:none;">
+		<div class="col-12 col-sm-12 col-md-7 col-lg-5 col-center">
+			<div class="alert alert-warning text-center mb-2">
+				<strong>High Access Level Required.</strong>
+			</div>
+		</div>
+	</div>
+		<div id="form_timeout" class="row" style="display:none">
+		<div class="col-12 col-sm-12 col-md-7 col-lg-5 col-center">
+			<div class="alert alert-danger text-center mb-2">
+				<strong>Log in timed out.</strong> Try again.
+			</div>
+		</div>
+	</div>
+		<div class="row d-md-none d-sm-block">
+		<div class="btn-group col-12 mb-1">
+			<a id="SMARTCARD-mobile" class="btn active btn-secondary col-4 shadow-none lp-btn-mobile" role="button" href="javascript:;" aria-pressed="true">Smartcard</a>
+			<a id="RSA-mobile" class="btn btn-light col-4 shadow-none lp-btn-mobile" href="javascript:;" role="button" aria-pressed="false">RSA</a>
+			<a id="AUID-mobile" class="btn btn-light col-4 shadow-none lp-btn-mobile" href="javascript:;" role="button" aria-pressed="false">Agency ID</a>
+		</div>
+	</div>
+		<div class="row" id="SMARTCARD-form">
+		<div class="col-12 col-sm-12 col-md-7 col-lg-5 col-center">
+			<form id="scLoginForm" name="scLoginForm" method="POST" class="card card-body card-launchpad bg-light" role="form">
+				<fieldset>
+					<legend class="form-legend text-center pb-4">Smartcard</legend>
+					<div class="row">
+						<div class="offset-md-1 col-md-3 d-none d-md-block">
+							<img alt="Sample smartcard" src="data:image/png;base64,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">
+						</div>
+						<div class="col-md-7">
+							<p>Insert your smartcard to begin</p>
+							<input id="scLogin" tabindex="10" type="submit" value="Smartcard Log In" title="Insert your smart card and press Enter, then enter your PIN and press Enter." class="btn btn-primary btn-block btn-lpad-smartcard mb-2 shadow-none">
+							<p>
+								<a href="/namehintlogin?level=20&target=https%3A%2F%2Fauth.launchpad.nasa.gov%2Ffed%2Fiwa%2F%3FfedData%3DP3R5cGU9c29jaWFsJlNBTUxSZXF1ZXN0PWZaTFBUNE13Rk1mJTJGRmRMN0tFT1FyQmtrdUIxY01wVU05T0RGbEZKR2s5SmlYOW4wdnhlR3VwbVlIWHJxZTk4Zm43d2wwRloySk8xdG8zYjh2ZWRnblk5V0tpQ25qeGoxUmhGTlFRQlJ0T1ZBTENONSUyQnJBbHZ1dVJ6bWlybVpiSVNRRzRzVUtybFZiUXQ5emszQndFNDglMkI3Yll3YWF6c2dHR3Vvaktzb1VIZXZEemh2UkZscXlXM2pBbWc4aXZvNGU4b0w1S3lIRkVMUlVlJTJCOFRZZUlycVM5WWsxSHE3TU9yZXNqTDJIeUE5ejFwUlFNaiUyQm45UVJjNW0zV00zbndXOFhCOFVWbFJIZ1ZSelJaMTZJVnpGckJ3NGQwTVl3QTkzeWl3Vk5rWSUyQlo0ZnpMeGdOdmNLM3lQaExRbWlWJTJCUmszMzN2aEtxRTJsJTJCSFUwNURRTzZMSXB0TnhWNjRnVk9wWVFBbHl6RWtPUm1iQyUyQmpYWmVrUGFaVDh6eFYlMkJ1Uzd4aGNIazFwSEhRWEd6enZRQTZkTkpwZFRIbGVIVThoak5FVTZtbGIlMkYza0h3QiZSZWxheVN0YXRlPXNzJTNBbWVtJTNBZjBkZTA2ZjEwOGU5MWEwZGMxODhjZTBkODA1ZWZkZjkwMDg4NGUxOTZjZTliYzFkZDVhZmMxNjhkMjEyYmEzNyZTTVBPUlRBTFVSTD1odHRwcyUzQSUyRiUyRmF1dGgubGF1bmNocGFkLm5hc2EuZ292JTJGYWZmd2Vic2VydmljZXMlMkZwdWJsaWMlMkZzYW1sMnNzbyZTQU1MVFJBTlNBQ1RJT05JRD0xYmIwNGRkZi1mMjljMzI5NS1hNzQzOWM2ZC0yMDFkOWVlYi0xY2Q4ZjFjNS1jMTA%3D" title="Admin, generic or test user log in." tabindex="11">Alternate User Log In</a>
+							</p>
+						</div>
+					</div>
+					<p class="text-center">
+						<b>Access Level:</b> High
+						<br>
+						<span>Full access to authorized applications.</span>
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="row" id="RSA-form" style="display: none;">
+		<div class="col-12 col-sm-12 col-md-7 col-lg-5 col-center">
+			<form id="rsaLoginForm" name="rsaLoginForm" method="POST" class="card card-body card-launchpad bg-light" role="form">			
+				<fieldset>
+					<legend class="form-legend text-center">RSA Token</legend>
+					<span id="login-failed-rsa-message" style="display:none"><a href="#" data-toggle="modal" data-target="#supportDetailsModal"><strong id="login-failed-rsa-response-message" class="font-w-normal lp-text-danger">Log in failed, try again.</strong></a></span>
+					<span id="login-failed-rsa-spacer" class="font-pad"></span>
+					<div class="row">
+						<div class="form-group col-12 pad-bottom">
+							<label for="USER2" class="justify-content-start col-12 col-md-5 no-padding"><strong>Agency&nbsp;User&nbsp;ID</strong></label>
+							<span class="col-md-7 col-lg-7 d-none d-md-block text-right float-right no-padding">
+								<a href="https://id.nasa.gov/AUIDRetrieval" target="_blank" tabindex="29">Forgot Agency User ID?</a>
+							</span>
+							<input id="USER2" tabindex="21" name="USER2" type="text" class="input-auth form-control col-12 shadow-none" maxlength="11" autocomplete="off">
+						</div>
+						<div class="form-group col-12 pad-bottom">
+							<label for="PASSWORD2" class="justify-content-start text-nowrap col-8 no-padding"><strong>Soft&nbsp;Token:</strong>&nbsp;Token&nbsp;Code&nbsp;only<br><strong>Hard&nbsp;Token:</strong>&nbsp;PIN&nbsp;+&nbsp;Token&nbsp;Code</strong></label>
+							<span class="col-md-4 col-lg-4 d-none d-md-block text-right float-right no-padding mt-4">
+								<a href="https://auth.launchpad.nasa.gov/help#headingTwelve" tabindex="30">Forgot PIN?</a>
+							</span>
+							<input id="PASSWORD2" tabindex="22" name="PASSWORD2" type="password" class="input-auth form-control col-12 shadow-none" maxlength="256" autocomplete="off">
+						</div>
+					</div>
+					<div class="col-3 clear-both float-left text-left p-0">
+						<input id="rsa_login_button" type="submit" tabindex="23" value="Log In" class="btn btn-primary btn-lpad-rsalogin shadow-none">
+					</div>
+					<div class="form-group col-9 d-md-none float-right text-right p-0">
+						<div class="col-12 col-lg-7 no-padding">
+							<a href="https://id.nasa.gov/AUIDRetrieval" target="_blank" tabindex="540">Forgot Agency User ID?</a>
+						</div>
+						<div class="col-12 col-lg-7 no-padding mt-1">
+							<a href="https://auth.launchpad.nasa.gov/help#headingTwelve" tabindex="530">Forgot PIN?</a>
+						</div>
+					</div>
+					<p class="w-100 d-inline-block text-center no-margin">
+						<b>Access Level:</b> Moderate<br><span>For full access log in with a smartcard.</span>
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="row" id="AUID-form" style="display: none;">
+	<div class="col-12 col-sm-12 col-md-7 col-lg-5 col-center">
+		<form id="auidLoginForm" name="auidLoginForm" method="POST" class="card card-body card-launchpad bg-light" role="form">
+			<fieldset>
+				<legend class="form-legend text-center"> Agency User ID </legend>
+				<span id="login-failed-auid-message" style="display:none"><a href="#" data-toggle="modal" data-target="#supportDetailsModal"><strong id="login-failed-auid-response-message" class="font-w-normal lp-text-danger">Log in failed, try again.</strong></a></span>
+				<span id="login-failed-auid-spacer" class="font-pad"></span>
+				<div class="row">
+					<div class="form-group col-12 pad-bottom">
+						<label for="USER1" class="justify-content-start col-12 col-md-5 no-padding"><strong>Agency&nbsp;User&nbsp;ID</strong></label> 
+						<span class="col-md-7 col-lg-7 d-none d-md-block text-right float-right no-padding">
+							<a href="https://id.nasa.gov/AUIDRetrieval" target="_blank" tabindex="34">Forgot&nbsp;Agency&nbsp;User&nbsp;ID?</a>
+						</span>
+						<input id="USER1" tabindex="31" name="USER1" type="text" class="input-auth form-control col-12 shadow-none" maxlength="256" autocomplete="off">
+					</div>
+					<div class="form-group col-12 pad-bottom">
+		     			<label for="PASSWORD1" class="justify-content-start col-12 col-md-5 no-padding"><strong>Password</strong></label>
+						<span class="col-md-7 col-lg-7 d-none d-md-block text-right float-right no-padding">
+							<a href="https://id.nasa.gov/PasswordReset" target="_blank" tabindex="35">Forgot&nbsp;Password?</a>
+						</span>
+							<input id="PASSWORD1" tabindex="32" name="PASSWORD1" type="password" class="input-auth form-control col-12 shadow-none" maxlength="256" autocomplete="off">
+						</div>
+					</div>
+					<div class="col-3 clear-both float-left text-left p-0">
+						<input id="auid_login_button" type="submit" tabindex="33" value="Log In" class="btn btn-primary btn-lpad-auidlogin shadow-none">
+					</div>
+					<div class="form-group col-9 d-md-none float-right text-right p-0">
+						<div class="col-12 col-lg-7 no-padding">
+							<a href="https://id.nasa.gov/AUIDRetrieval" target="_blank" tabindex="640">Forgot&nbsp;Agency&nbsp;User&nbsp;ID?</a>
+						</div>
+						<div class="col-12 col-lg-7 no-padding mt-1">
+							<a href="https://id.nasa.gov/PasswordReset" target="_blank" tabindex="630">Forgot&nbsp;Password?</a>
+						</div>
+					</div>
+					<p class="w-100 d-inline-block text-center no-margin">
+						<b>Access Level:</b> Low<br> <span>For full access log in with a smartcard.</span>
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+		<div class="row d-none d-md-block" id="ORline">
+		<div class="col-sm-8 col-md-7 col-lg-5 col-center">
+			<div class="orline">
+				<span class="orline-separator">&nbsp;&nbsp;Or choose another option below&nbsp;&nbsp;</span>
+			</div>
+		</div>
+	</div>
+		<div class="row d-none d-md-block">
+		<div class="col-md-7 col-lg-5 col-center">
+			<button id="SMARTCARD-desktop" class="btn btn-block btn-secondary shadow-none active" aria-pressed="true" tabindex="50">Smartcard (preferred)</button>
+			<button id="RSA-desktop" class="btn btn-block btn-light shadow-none" aria-pressed="false" tabindex="51">RSA Token</button>
+			<button id="AUID-desktop" class="btn btn-block btn-light shadow-none" aria-pressed="false" tabindex="52">Agency User ID</button>
+		</div>
+	</div>
+	<br>
+	<div id="warningContent" class="notice col-12 alert alert-warning warning-govsystem pl-2 pr-2 pt-1 pb-1">
+  <p class="mb-0 ">
+     <strong>By accessing and using this information system, you acknowledge and consent to the following:</strong>
+     <br>
+     You are accessing a U.S. Government information system, which includes: (1) this computer; (2) this computer network; (3) all computers connected to this network including end user systems; (4) all devices and storage media attached to this network or to any computer on this network; and (5) cloud and remote information services. This information system is provided for U.S. Government authorized use only. This system contains Controlled Unclassified Information (CUI). You have no reasonable expectation of privacy regarding any communication transmitted through or data stored on this information system. At any time, and for any lawful purpose, the U.S. Government may monitor, intercept, search, and seize any communication or data transiting, stored on, or traveling to or from this information system. You are NOT authorized to process classified information on this information system. Unauthorized or improper use of this system may result in suspension or loss of access privileges, disciplinary action, and civil and/or criminal penalties.
+  </p>
+</div>
+	<div id="privacyPolicyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 id="privacyPolicyModalLabel" class="modal-title">Privacy Policy</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			</div>
+			<div class="modal-body">
+				<p>AUTHORITY:  42 U.S.C. 2451, et seq., the National Aeronautics and Space Act of 1958, as amended</p>
+				<p>PURPOSE:  To collect information from persons requesting access to NASA assets and/or resources in order to establish an identity and determine eligibility for access.</p>
+				<p>ROUTINE USES:  Use and disclosure of your records within and outside of NASA may occur in accordance with the NASA Security Records System Privacy Act System of Record 
+				Notices published at <a target="_blank" href="https://www.nasa.gov/content/nasa-privacy-act-system-of-records-notices-sorns">https://www.nasa.gov/content/nasa-privacy-act-system-of-records-notices-sorns</a> 
+				and as permitted by the Privacy Act of 1974, as amended (5 U.S.C. 552a(b)).</p>
+				<p>DISCLOSURE:  Providing this information is voluntary; however, failure to provide the requested information may result in the denial of access.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="newUserContent">    
+	<div id="newuser" class="modal fade" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="newuserModalTitle" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="newuserModalTitle">First Time User</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						To log in using NASA Access Launchpad you will need to
+						create a profile. Creating your profile will allow you to set a
+						password and security answers which will be used should you ever
+						forget your password. Once it is completed your account will be
+						enabled for log in.
+					</p>
+					<p>
+						To setup your profile, click the <em>Create My Profile</em> button
+						below which will take you to User Self Service in order to
+						complete the process.
+					</p>
+					<p>
+						If you have already created your profile, you can close this
+						dialog box and log in.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<a type="button" class="btn btn-primary shadow-none" style="-webkit-appearance:none !important" href="https://id.nasa.gov/ProfileCreate" target="_blank">Create My Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="supportDetailsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="supportDetailsModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 id="supportDetailsModalLabel" class="modal-title">Support Details</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			</div>
+			<div class="modal-body">
+			<p>The following information can be provided to help desk support to assist troubleshooting.</p>
+				<ul id="supportDetailsList" class="supportDetailsList">
+			     	<li><span class="supportDetailsName">Error Code:</span> <span id="errorCode"></span></li>
+					<li><span class="supportDetailsName">Transaction ID:</span> pm20000018e3dd11bca-f8356f</li>
+					<li><span class="supportDetailsName">Time:</span> <span id="errorTime"></span></li>
+				</ul>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="copy_support_detail" data-clipboard-text="">Copy</button>
+				<button type="button" class="btn btn-light" id="close_support_detail" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer id="footer" role="contentinfo">
+	<div class="row">
+		<div class="col-12">
+			<hr/>                
+		</div>          
+	</div>      
+    <div class="row">
+        <p class="col-12 col-md text-center"><b>Website Owner:</b><br>Kyle Cossey</p>
+        <p class="col-12 col-md text-center"><b>Curator:</b><br>Agency Applications Office</p>
+        <p class="col-12 col-md text-center"><a href="https://www.nasa.gov/accessibility/" target="_blank" rel="noopener noreferrer">Accessibility</a></p>
+        <p class="col-12 col-md text-center"><a href="#privacyPolicyModal" tabindex="9999" data-toggle="modal">Privacy Policy</a></p>     
+        <p class="col-12 col-md text-center"><b>Need Help?</b><br>Call the ESD<br>(877) 677-2123</p>
+        <p class="col-12 col-md text-center"><b>Region:</b><br>pm2</p>
+    </div>
+     <div id="privacyPolicyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 id="privacyPolicyModalLabel" class="modal-title">Privacy Policy</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			</div>
+			<div class="modal-body">
+				<p>AUTHORITY:  42 U.S.C. 2451, et seq., the National Aeronautics and Space Act of 1958, as amended</p>
+				<p>PURPOSE:  To collect information from persons requesting access to NASA assets and/or resources in order to establish an identity and determine eligibility for access.</p>
+				<p>ROUTINE USES:  Use and disclosure of your records within and outside of NASA may occur in accordance with the NASA Security Records System Privacy Act System of Record 
+				Notices published at <a target="_blank" href="https://www.nasa.gov/content/nasa-privacy-act-system-of-records-notices-sorns">https://www.nasa.gov/content/nasa-privacy-act-system-of-records-notices-sorns</a> 
+				and as permitted by the Privacy Act of 1974, as amended (5 U.S.C. 552a(b)).</p>
+				<p>DISCLOSURE:  Providing this information is voluntary; however, failure to provide the requested information may result in the denial of access.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
